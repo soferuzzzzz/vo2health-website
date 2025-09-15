@@ -1,48 +1,238 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personvern - VO2 Health</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Personvernpolicy - VO2 Health</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #007AFF;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007AFF;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>🔒 Personvern</h1>
-        <a href="index.html">← Tilbake til hjemmeside</a>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Personvern for VO2 Health</h2>
-            <p>Sist oppdatert: 31. august 2024</p>
+    <div class="header">
+        <h1>🔒 Personvernpolicy</h1>
+        <h2>VO2 Health App</h2>
+        <p><strong>Sist oppdatert:</strong> 24. august 2024</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Introduksjon</h2>
+        <p>VO2 Health ("vi", "oss", "vår") respekterer ditt personvern og er forpliktet til å beskytte dine personopplysninger. Denne personvernpolicyen forklarer hvordan vi samler inn, bruker og beskytter informasjonen din når du bruker VO2 Health-appen.</p>
+        
+        <div class="highlight">
+            <strong>📱 App-informasjon:</strong><br>
+            <strong>App-navn:</strong> VO2 Health<br>
+            <strong>Bundle ID:</strong> no.vo2connect.VO2-Health<br>
+            <strong>Versjon:</strong> 1.0.0
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Hvilke opplysninger samler vi inn?</h2>
+        
+        <h3>2.1 Opplysninger du gir oss:</h3>
+        <ul>
+            <li><strong>Kontoinformasjon:</strong> E-postadresse, brukernavn, passord</li>
+            <li><strong>Personlig informasjon:</strong> Alder, kjønn, vekt</li>
+            <li><strong>Helseinformasjon:</strong> VO2 Max-verdier, treningsdata, labtestresultater</li>
+            <li><strong>Lokasjonsdata:</strong> Kommune, fylke (for regionale leaderboards)</li>
+        </ul>
+
+        <h3>2.2 Automatisk innsamlet informasjon:</h3>
+        <ul>
+            <li><strong>Enhetsinformasjon:</strong> Enhetstype, operativsystem, app-versjon</li>
+            <li><strong>Bruksdata:</strong> Hvordan du bruker appen, funksjoner du benytter</li>
+            <li><strong>GPS-data:</strong> Lokasjon under trening (kun når appen er aktiv)</li>
+            <li><strong>Analytikk:</strong> App-ytelse, feilrapportering, brukermønstre</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Hvordan bruker vi informasjonen?</h2>
+        
+        <h3>3.1 Hovedformål:</h3>
+        <ul>
+            <li><strong>App-funksjonalitet:</strong> Tilby og forbedre app-tjenester</li>
+            <li><strong>Personalisering:</strong> Tilpasse innhold og opplevelse</li>
+            <li><strong>Leaderboards:</strong> Vise rangeringer og sammenligninger</li>
+            <li><strong>Treningsoppfølging:</strong> Spore fremgang og mål</li>
+        </ul>
+
+        <h3>3.2 Sekundære formål:</h3>
+        <ul>
+            <li><strong>Analytikk:</strong> Forbedre app-ytelse og brukeropplevelse</li>
+            <li><strong>Kommunikasjon:</strong> Sende viktige oppdateringer og påminnelser</li>
+            <li><strong>Support:</strong> Hjelpe deg med tekniske problemer</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Deling av informasjon</h2>
+        
+        <p><strong>Vi deler IKKE dine personopplysninger med tredjeparter, unntatt:</strong></p>
+        
+        <h3>4.1 Tjenesteleverandører:</h3>
+        <ul>
+            <li><strong>Firebase (Google):</strong> Databaselagring, autentisering, analytikk</li>
+            <li><strong>Apple:</strong> Push-varsler, App Store-analytikk</li>
+        </ul>
+
+        <h3>4.2 Juridiske krav:</h3>
+        <ul>
+            <li>Når loven krever det</li>
+            <li>For å beskytte våre rettigheter og sikkerhet</li>
+            <li>I forbindelse med rettslige prosesser</li>
+        </ul>
+
+        <h3>4.3 Aggregerte data:</h3>
+        <p>Vi kan dele anonymiserte, aggregerte data for statistiske formål (f.eks. "X% av brukere har VO2 Max over 60").</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Datasikkerhet</h2>
+        
+        <p>Vi implementerer industristandard sikkerhetstiltak for å beskytte dine opplysninger:</p>
+        
+        <ul>
+            <li><strong>Kryptering:</strong> All data krypteres i transit og i ro</li>
+            <li><strong>Autentisering:</strong> Sikker innlogging med Firebase Auth</li>
+            <li><strong>Regelmessig sikkerhetsvurdering:</strong> Kontinuerlig overvåking og oppdateringer</li>
+            <li><strong>Tilgangskontroll:</strong> Begrenset tilgang til personopplysninger</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Dine rettigheter</h2>
+        
+        <p>Du har følgende rettigheter:</p>
+        
+        <ul>
+            <li><strong>Innsikt:</strong> Få tilgang til dine personopplysninger</li>
+            <li><strong>Rettelse:</strong> Berikte feilaktige eller ufullstendige opplysninger</li>
+            <li><strong>Sletting:</strong> Be om sletting av dine opplysninger</li>
+            <li><strong>Portabilitet:</strong> Få utlevert dine data i et maskinlesbart format</li>
+            <li><strong>Innsigelse:</strong> Protestere mot behandling av dine opplysninger</li>
+            <li><strong>Begrensning:</strong> Be om begrensning av behandling</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. GDPR og norsk lovgivning</h2>
+        
+        <p>Vi overholder både GDPR (General Data Protection Regulation) og norsk personvernlovgivning:</p>
+        
+        <ul>
+            <li><strong>Rettmessig grunnlag:</strong> Kontrakt, samtykke og berettiget interesse</li>
+            <li><strong>Samtykke:</strong> Du kan trekke samtykke tilbake når som helst</li>
+            <li><strong>Dataminimering:</strong> Vi samler kun inn nødvendig data</li>
+            <li><strong>Lagring:</strong> Data lagres kun så lenge det er nødvendig</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Lokasjonsdata</h2>
+        
+        <p>Vi samler inn begrenset lokasjonsdata for følgende formål:</p>
+        
+        <ul>
+            <li><strong>Regionale leaderboards:</strong> Vise rangeringer per kommune/fylke</li>
+            <li><strong>Treningsoppfølging:</strong> Spore treningsruter og distanser</li>
+            <li><strong>Personalisering:</strong> Tilpasse innhold til din region</li>
+        </ul>
+        
+        <p><strong>Vi deler IKKE nøyaktige GPS-koordinater eller adresser.</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>9. Barns personvern</h2>
+        
+        <p>VO2 Health er ikke beregnet for barn under 13 år. Vi samler ikke bevisst inn personopplysninger fra barn under 13 år. Hvis du er forelder og tror at ditt barn har gitt oss personopplysninger, kontakt oss umiddelbart.</p>
+    </div>
+
+    <div class="section">
+        <h2>10. Endringer i personvernpolicy</h2>
+        
+        <p>Vi kan oppdatere denne personvernpolicyen fra tid til annen. Vi vil varsle deg om betydelige endringer gjennom:</p>
+        
+        <ul>
+            <li>Push-varsel i appen</li>
+            <li>E-post til registrerte brukere</li>
+            <li>Oppdatert dato i appen</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>11. Kontaktinformasjon</h2>
+        
+        <div class="contact">
+            <p><strong>Hvis du har spørsmål om denne personvernpolicyen eller vår behandling av personopplysninger:</strong></p>
             
-            <h3>1. Informasjon vi samler inn</h3>
-            <ul>
-                <li><strong>Kontaktinformasjon:</strong> E-post og brukernavn</li>
-                <li><strong>Helse- og treningsdata:</strong> VO2 Max, treningsøkter</li>
-                <li><strong>Lokasjonsdata:</strong> GPS under trening, kommune/fylke</li>
-                <li><strong>Bruksdata:</strong> App-analytikk og krasjrapporter</li>
-            </ul>
+            <p><strong>E-post:</strong> privacy@vo2connect.no</p>
+            <p><strong>Adresse:</strong> VO2 Connect AS<br>
+            [Din bedriftsadresse]<br>
+            Norge</p>
             
-            <h3>2. Hvordan vi bruker informasjonen</h3>
-            <ul>
-                <li>Levere app-funksjonalitet</li>
-                <li>Generere leaderboards og rangeringer</li>
-                <li>Forbedre app-opplevelsen</li>
-                <li>Løse tekniske problemer</li>
-            </ul>
-            
-            <h3>3. Datadeling</h3>
-            <p>Vi deler IKKE dine personlige data med tredjeparter. Alle data er GDPR-kompatible og sikre.</p>
-            
-            <h3>4. Kontakt</h3>
-            <p>Spørsmål om personvern? Kontakt oss på: privacy@vo2connect.no</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 VO2 Health. Alle rettigheter forbeholdt.</p>
-    </footer>
+            <p><strong>Datasjef:</strong> [Navn på datasjef]<br>
+            <strong>E-post:</strong> dpo@vo2connect.no</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>12. Klager</h2>
+        
+        <p>Hvis du mener at vi ikke behandler dine personopplysninger i samsvar med denne policyen eller personvernlovgivningen, kan du:</p>
+        
+        <ol>
+            <li>Kontakte oss direkte</li>
+            <li>Klage til Datatilsynet (norsk tilsynsmyndighet)</li>
+            <li>Klage til relevant tilsynsmyndighet i ditt land</li>
+        </ol>
+        
+        <p><strong>Datatilsynet:</strong><br>
+        Postboks 458 Sentrum<br>
+        0105 Oslo<br>
+        Norge<br>
+        <a href="https://www.datatilsynet.no">www.datatilsynet.no</a></p>
+    </div>
+
+    <div class="highlight">
+        <p><strong>⚠️ Viktig:</strong> Ved å bruke VO2 Health-appen godtar du betingelsene i denne personvernpolicyen. Hvis du ikke er enig i betingelsene, bruk ikke appen.</p>
+    </div>
+
+    <div class="section">
+        <p><em>Denne personvernpolicyen ble sist oppdatert 24. august 2024 og er tilgjengelig i appen under Innstillinger > Personvern.</em></p>
+    </div>
 </body>
 </html>
+
